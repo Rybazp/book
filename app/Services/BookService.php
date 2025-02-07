@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\Storage;
 class BookService
 {
     /**
-     * @return Book
+     * @return LengthAwarePaginator
      */
-    public function getBooks(): Book
+    public function getBooks(): LengthAwarePaginator
     {
         return Book::paginate(5);
     }
